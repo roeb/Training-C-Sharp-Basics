@@ -65,3 +65,37 @@ Bei einem Preis von 24,99 € pro Eimer betragen die Gesamtkosten: 49,98 €
 - Denken Sie an die Konvertierung von string zu double bei den Eingaben
 - Nutzen Sie String-Interpolation ($"...") für formatierte Ausgaben
 
+## MSDN Dokumentation Ressourcen für Übung 1
+
+### Grundlegende Konzepte
+
+- [Einführung in C# Konsolenanwendungen](https://learn.microsoft.com/de-de/dotnet/csharp/tutorials/console-teleprompter)
+- [Erstellen einer Konsolenanwendung](https://learn.microsoft.com/de-de/dotnet/core/tutorials/with-visual-studio?pivots=dotnet-7-0)
+
+### Datentypen und Variablen
+
+- [Eingebaute Typen (C# Referenz)](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/builtin-types/built-in-types)
+- [Deklarationen von Variablen](https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/variables)
+- [Numerische Typen](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/builtin-types/numeric-types)
+
+### Ein- und Ausgabe
+
+- [Console.WriteLine Methode](https://learn.microsoft.com/de-de/dotnet/api/system.console.writeline)
+- [Console.ReadLine Methode](https://learn.microsoft.com/de-de/dotnet/api/system.console.readline)
+
+### String-Formatierung
+
+- [String-Interpolation](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/tokens/interpolated)
+- [Formatierung von Typen](https://learn.microsoft.com/de-de/dotnet/standard/base-types/formatting-types)
+- [Standard numerische Formatzeichenfolgen](https://learn.microsoft.com/de-de/dotnet/standard/base-types/standard-numeric-format-strings)
+
+### Typkonvertierung
+
+- [Type-Conversion (Typkonvertierung)](https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+- [Parse-Methode](https://learn.microsoft.com/de-de/dotnet/api/system.double.parse)
+- [Convert-Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.convert)
+
+### Mathematische Operationen
+
+- [Arithmetische Operatoren](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/operators/arithmetic-operators)
+- [Math-Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.math)
