@@ -73,3 +73,35 @@ Erstellen Sie eine Ausgabe in folgendem Format:
   - Die ToString()-Methode kann mit PadRight() oder PadLeft() kombiniert werden
   - Alternativ kann die {0,-20} Syntax in string.Format verwendet werden
 - Konstanten für die Tabellenbreite definieren macht den Code übersichtlicher
+
+## Nützliche MSDN Dokumentation für Übung 3
+
+### String-Grundlagen und Formatierung
+- [String Klasse (System.String)](https://learn.microsoft.com/de-de/dotnet/api/system.string)
+- [String Formatierung](https://learn.microsoft.com/de-de/dotnet/standard/base-types/formatting-types)
+- [String Interpolation](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/tokens/interpolated)
+- [Composite Formatting](https://learn.microsoft.com/de-de/dotnet/standard/base-types/composite-formatting)
+
+### String-Methoden
+- [ToUpper() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.toupper)
+- [ToLower() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.tolower)
+- [Substring() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.substring)
+- [Replace() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.replace)
+- [Split() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.split)
+
+### Konsoleneingabe und -ausgabe
+- [Console.ReadLine() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.console.readline)
+- [Console.WriteLine() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.console.writeline)
+
+### Typkonvertierung
+- [Convert Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.convert)
+- [Parse() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.int32.parse)
+- [TryParse() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.int32.tryparse)
+
+### Zahlenformatierung
+- [Numerische Formatstrings](https://learn.microsoft.com/de-de/dotnet/standard/base-types/standard-numeric-format-strings)
+- [Währungsformatierung](https://learn.microsoft.com/de-de/dotnet/standard/base-types/standard-numeric-format-strings#currency-format-specifier-c)
+
+### Ausnahmebehandlung
+- [Try-Catch Blöcke](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/try-catch-finally)
+- [FormatException Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.formatexception)
