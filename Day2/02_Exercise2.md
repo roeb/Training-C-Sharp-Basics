@@ -85,3 +85,30 @@ var top3 = // Ihre LINQ-Abfrage
 // Lange Wörter finden
 var longWords = // Ihre LINQ-Abfrage
 ```
+
+## Ressourcen für Übung 2 - Textanalyse
+
+### Grundlegende String-Operationen
+- [String.Split Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.split)
+- [String.ToLower Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.tolower)
+- [String.Trim Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.trim)
+- [String.Replace Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.replace)
+
+### Collections
+- [Dictionary<TKey,TValue> Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.collections.generic.dictionary-2)
+- [Dictionary Verwendung und Beispiele](https://learn.microsoft.com/de-de/dotnet/api/system.collections.generic.dictionary-2#examples)
+
+### LINQ
+- [LINQ Grundlagen](https://learn.microsoft.com/de-de/dotnet/csharp/linq/)
+- [OrderBy Operator](https://learn.microsoft.com/de-de/dotnet/api/system.linq.enumerable.orderby)
+- [Where Operator](https://learn.microsoft.com/de-de/dotnet/api/system.linq.enumerable.where)
+- [Select Operator](https://learn.microsoft.com/de-de/dotnet/api/system.linq.enumerable.select)
+- [Take Methode](https://learn.microsoft.com/de-de/dotnet/api/system.linq.enumerable.take) (für Top 3)
+
+### Arrays und Enumerable
+- [Array.ToArray Methode](https://learn.microsoft.com/de-de/dotnet/api/system.linq.enumerable.toarray)
+- [IEnumerable<T> Interface](https://learn.microsoft.com/de-de/dotnet/api/system.collections.generic.ienumerable-1)
+
+### Optional: Reguläre Ausdrücke
+- [Regular Expressions](https://learn.microsoft.com/de-de/dotnet/api/system.text.regularexpressions.regex)
+- [Regex.Replace Methode](https://learn.microsoft.com/de-de/dotnet/api/system.text.regularexpressions.regex.replace)

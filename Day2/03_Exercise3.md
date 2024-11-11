@@ -130,3 +130,27 @@ class Program
     }
 }
 ```
+
+## Ressourcen für Übung 3 - Telefonbuch-Verwaltung
+
+### C# Grundlagen
+- [Console Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.console)
+- [String Klasse und String-Operationen](https://learn.microsoft.com/de-de/dotnet/api/system.string)
+- [Kontrollstrukturen (if, switch, while)](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/selection-statements)
+
+### Collections
+- [List<T> Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.collections.generic.list-1)
+- [Collections Übersicht](https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/concepts/collections)
+
+### Klassen und Properties
+- [Klassen und Objekte](https://learn.microsoft.com/de-de/dotnet/csharp/fundamentals/types/classes)
+- [Properties](https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/properties)
+
+### String-Verarbeitung und Validierung
+- [String.Contains Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.contains)
+- [String.ToLower/ToUpper](https://learn.microsoft.com/de-de/dotnet/api/system.string.tolower)
+- [String.IsNullOrEmpty](https://learn.microsoft.com/de-de/dotnet/api/system.string.isnullorempty)
+
+### Fehlerbehandlung
+- [try-catch Blöcke](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/exception-handling-statements)
+- [Exception Handling](https://learn.microsoft.com/de-de/dotnet/csharp/fundamentals/exceptions/)

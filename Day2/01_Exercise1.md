@@ -93,3 +93,29 @@ Console.WriteLine("\nStatistik:");
 Console.WriteLine("\nGerade Zahlen:");
 // Ihre Implementierung
 ```
+
+## MSDN Dokumentation Ressourcen für Übung 1
+
+### Arrays
+- [Array Klasse (System.Array)](https://learn.microsoft.com/de-de/dotnet/api/system.array)
+- [Array.Sort Methode](https://learn.microsoft.com/de-de/dotnet/api/system.array.sort)
+
+### Eingabe und Konvertierung
+- [Console.ReadLine Methode](https://learn.microsoft.com/de-de/dotnet/api/system.console.readline)
+- [int.TryParse Methode](https://learn.microsoft.com/de-de/dotnet/api/system.int32.tryparse)
+
+### Listen
+- [List<T> Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.collections.generic.list-1)
+- [List<T>.Add Methode](https://learn.microsoft.com/de-de/dotnet/api/system.collections.generic.list-1.add)
+
+### Schleifen und Iteration
+- [foreach Statement](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement)
+- [for Statement](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/iteration-statements#the-for-statement)
+
+### String Operationen
+- [string.Join Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.join)
+- [String Formatierung](https://learn.microsoft.com/de-de/dotnet/standard/base-types/formatting-types)
+
+### Mathematische Operationen
+- [Math.Min Methode](https://learn.microsoft.com/de-de/dotnet/api/system.math.min)
+- [Math.Max Methode](https://learn.microsoft.com/de-de/dotnet/api/system.math.max)
