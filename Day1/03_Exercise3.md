@@ -88,6 +88,8 @@ Erstellen Sie eine Ausgabe in folgendem Format:
 - [Substring() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.substring)
 - [Replace() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.replace)
 - [Split() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.split)
+- [PadLeft() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.padleft)
+- [PadRight() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.string.padright)
 
 ### Konsoleneingabe und -ausgabe
 - [Console.ReadLine() Methode](https://learn.microsoft.com/de-de/dotnet/api/system.console.readline)
