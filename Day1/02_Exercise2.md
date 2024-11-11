@@ -134,3 +134,29 @@ Häufige Fehler und deren Vermeidung:
 2. Bei Berechnungen auf korrekte Datentypen achten
 3. Bei der Formatierung auf korrekte Syntax der String-Interpolation achten
 4. Dezimaltrennzeichen beachten (Punkt oder Komma je nach Systemeinstellung)
+
+## Hilfreiche MSDN Dokumentation für Übung 2
+
+### Grundlegende Datentypen
+- [Numerische Typen (int, double, etc.)](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
+- [Der string Datentyp](https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/strings/)
+- [Der bool Datentyp](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/builtin-types/bool)
+
+### String-Formatierung
+- [String-Interpolation ($"")](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/tokens/interpolated)
+- [Formatierung numerischer Werte](https://learn.microsoft.com/de-de/dotnet/standard/base-types/standard-numeric-format-strings)
+- [Console.WriteLine Methode](https://learn.microsoft.com/de-de/dotnet/api/system.console.writeline)
+
+### Mathematische Operationen
+- [Arithmetische Operatoren](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/operators/arithmetic-operators)
+- [Die Math Klasse](https://learn.microsoft.com/de-de/dotnet/api/system.math)
+- [Typkonvertierung bei numerischen Typen](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/builtin-types/numeric-conversions)
+
+### Nützliche Math-Klassen Methoden
+- [Math.Round()](https://learn.microsoft.com/de-de/dotnet/api/system.math.round)
+- [Math.Floor()](https://learn.microsoft.com/de-de/dotnet/api/system.math.floor)
+- [Math.Ceiling()](https://learn.microsoft.com/de-de/dotnet/api/system.math.ceiling)
+- [Math.Pow()](https://learn.microsoft.com/de-de/dotnet/api/system.math.pow)
+- [Math.Sqrt()](https://learn.microsoft.com/de-de/dotnet/api/system.math.sqrt)
+- [Math.Max()](https://learn.microsoft.com/de-de/dotnet/api/system.math.max)
+- [Math.Min()](https://learn.microsoft.com/de-de/dotnet/api/system.math.min)
