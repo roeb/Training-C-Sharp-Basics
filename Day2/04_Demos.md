@@ -99,6 +99,124 @@ string GetDayType(DayOfWeek day) => day switch
 };
 ```
 
+### Pattern Matching
+
+#### 1. `is` Pattern Matching
+
+```csharp
+object obj = 42;
+if (obj is int number)
+{
+    Console.WriteLine($"Es ist eine Zahl: {number}");
+}
+```
+
+#### 2. Type Pattern
+
+```csharp
+object obj = "Hello";
+if (obj is string text)
+{
+    Console.WriteLine($"Es ist ein String: {text}");
+}
+```
+
+#### 3. Property Pattern
+
+```csharp
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+var person = new Person { Name = "Alice", Age = 30 };
+
+if (person is { Age: >= 18 })
+{
+    Console.WriteLine("Die Person ist volljährig.");
+}
+```
+
+#### 4. Tuple Pattern
+
+```csharp
+(int x, int y) = (5, 10);
+
+string quadrant = (x, y) switch
+{
+    (> 0, > 0) => "1st Quadrant",
+    (< 0, > 0) => "2nd Quadrant",
+    (< 0, < 0) => "3rd Quadrant",
+    (> 0, < 0) => "4th Quadrant",
+    _ => "On an axis"
+};
+
+Console.WriteLine(quadrant);
+```
+
+#### 5. Relational Patterns
+
+```csharp
+int number = 15;
+
+string category = number switch
+{
+    < 0 => "Negative",
+    0 => "Zero",
+    > 0 => "Positive",
+    _ => "Unknown"
+};
+
+Console.WriteLine(category);
+```
+
+#### 6. Logical Patterns
+
+```csharp
+int value = 10;
+
+if (value is > 0 and < 20)
+{
+    Console.WriteLine("Value is between 1 and 19.");
+}
+
+if (value is < 0 or > 50)
+{
+    Console.WriteLine("Value is either less than 0 or greater than 50.");
+}
+```
+
+### Tupel-Demonstration
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Erstellen eines Tupels
+        (string Name, int Alter, string Stadt) person = ("Alice", 30, "Berlin");
+
+        // Zugriff auf die Tupel-Elemente durch ihre Namen
+        Console.WriteLine($"Name: {person.Name}, Alter: {person.Alter}, Stadt: {person.Stadt}");
+
+        // Tupel mit einem Funktionsrückgabewert
+        var result = GetPersonInfo();
+        
+        // Zugriff auf die Tupel-Elemente durch Positions-Indizes
+        Console.WriteLine($"Name: {result.Item1}, Alter: {result.Item2}, Stadt: {result.Item3}");
+    }
+
+    static (string, int, string) GetPersonInfo()
+    {
+        // Rückgabe eines Tupels
+        return ("Bob", 25, "Munich");
+    }
+}
+```
+
 ### Schleifen Demos
 
 ```csharp
@@ -232,6 +350,93 @@ foreach (KeyValuePair<string, int> eintrag in altersListe)
 }
 ```
 
+### HashSet
+
+Ein `HashSet` speichert einzigartige Elemente und bietet schnelle Suchoperationen.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class HashSetDemo
+{
+    static void Main()
+    {
+        HashSet<string> set = new HashSet<string>();
+
+        // Elemente hinzufügen
+        set.Add("Apfel");
+        set.Add("Banane");
+        set.Add("Orange");
+        set.Add("Apfel"); // Duplikate werden ignoriert
+
+        Console.WriteLine("HashSet-Inhalt:");
+        foreach (var item in set)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
+```
+
+### Queue
+
+Eine `Queue` (Warteschlange) verwendet das FIFO-Prinzip.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class QueueDemo
+{
+    static void Main()
+    {
+        Queue<string> queue = new Queue<string>();
+
+        // Elemente hinzufügen
+        queue.Enqueue("Erster");
+        queue.Enqueue("Zweiter");
+        queue.Enqueue("Dritter");
+
+        // Elemente entfernen
+        Console.WriteLine("Queue-Inhalt:");
+        while (queue.Count > 0)
+        {
+            Console.WriteLine(queue.Dequeue());
+        }
+    }
+}
+```
+
+### Stack
+
+Ein `Stack` verwendet das LIFO-Prinzip.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class StackDemo
+{
+    static void Main()
+    {
+        Stack<string> stack = new Stack<string>();
+
+        // Elemente hinzufügen
+        stack.Push("Erster");
+        stack.Push("Zweiter");
+        stack.Push("Dritter");
+
+        // Elemente entfernen
+        Console.WriteLine("Stack-Inhalt:");
+        while (stack.Count > 0)
+        {
+            Console.WriteLine(stack.Pop());
+        }
+    }
+}
+```
+
 ### LINQ Grundlagen Demo
 
 ```csharp
@@ -263,6 +468,24 @@ foreach (int z in verdoppelt)
 ```
 
 ## 3. Kombinierte Demo: Einkaufsliste
+
+### Aufgabenstellung
+
+Implementieren Sie eine einfache Einkaufsliste in C# mit den folgenden Anforderungen:
+
+1. **Produktklasse**: Erstellen Sie eine Klasse `Produkt` mit den Eigenschaften `Name`, `Preis` und `Menge`, die jeweils die Details eines Produkts abbilden.
+
+2. **Einkaufslisteklasse**: Entwickeln Sie eine Klasse `Einkaufsliste`, die eine Liste von Produkten verwaltet.
+
+   - Implementieren Sie die Methode `ProduktHinzufügen`, die es ermöglicht, ein neues Produkt mit den angegebenen Eigenschaften `Name`, `Preis` und `Menge` zur Liste hinzuzufügen.
+
+   - Implementieren Sie die Methode `ListeAnzeigen`, die alle Produkte in alphabetischer Reihenfolge nach ihrem Namen auflistet. Zeigen Sie die Menge und den Einzelpreis jedes Produkts an sowie die Summe der Preise aller Produkte.
+
+   - Implementieren Sie die Methode `TeureProdukteSuchen`, die alle Produkte ausgibt, deren Preis über einem gegebenen Wert liegt. Diese Liste soll nach Preis absteigend sortiert sein.
+
+3. **Verwendung**: Fügen Sie in einer Beispielverwendung mindestens vier Produkte zur `Einkaufsliste` hinzu. Zeigen Sie die vollständige Liste an und suchen Sie nach Produkten, deren Preis über 3,00 Euro liegt.
+
+Stellen Sie sicher, dass Methoden zur Konsolenausgabe verwenden und ordnungsgemäß formatierte Informationen bereitstellen, einschließlich der Darstellung von Preisen in Währungsformat.
 
 ```csharp
 class Produkt
