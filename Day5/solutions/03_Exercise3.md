@@ -21,7 +21,10 @@ namespace BankingSystem
         public decimal Balance { get; protected set; }
         public string Owner { get; set; }
 
+        public Account(double balance) => Balance = balance;
+
         public abstract decimal CalculateInterest();
+        public abstract void Deposit(decimal amount);
 
         public override string ToString()
         {
@@ -33,6 +36,8 @@ namespace BankingSystem
     {
         public decimal Overdraft { get; set; }
 
+        public CheckingAccount(decimal balance) : base(balance) {}
+
         public bool Transfer(Account target, decimal amount)
         {
             if (Withdraw(amount))
@@ -43,7 +48,7 @@ namespace BankingSystem
             return false;
         }
 
-        public void Deposit(decimal amount)
+        public override void Deposit(decimal amount)
         {
             if (amount > 0)
             {
@@ -76,6 +81,8 @@ namespace BankingSystem
     {
         public decimal MinimumBalance { get; set; }
 
+        public SavingsAccount(decimal balance) : base(balance) {}
+
         public bool Transfer(Account target, decimal amount)
         {
             if (Withdraw(amount))
@@ -86,7 +93,7 @@ namespace BankingSystem
             return false;
         }
 
-        public void Deposit(decimal amount)
+        public override void Deposit(decimal amount)
         {
             if (amount > 0)
             {
